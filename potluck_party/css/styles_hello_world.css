@@ -10,13 +10,19 @@
 }
 
 .welcome-info {
-	width: 70%;
-	margin-right: 15%;
-	margin-left: 15%;
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
 }
 
 .welcome-text {
 	text-align: center;
+	line-height: 40px;
+}
+
+.welcome-heading {
+	margin-top: 20px;
+	line-height: 40px;
 }
 
 .fireworks-img {
@@ -36,7 +42,7 @@
 	border-radius: 8px;
 }
 
-form-modal {
+.form-modal {
 	margin-top: 26px;
 }
 
@@ -62,6 +68,10 @@ form-modal {
 	padding-top: 4px;
 }
 
+.suggestions {
+	border-radius: 10px;
+}
+
 
 .modal-window {
 	position: relative;
@@ -78,7 +88,8 @@ form-modal {
 	margin-top: 5%; 
 	display: none;
 	box-shadow: 10px 10px 5px #888888;
-	border-radius: 8px;
+	border-radius: 10px;
+	padding: 30px;
 }
 
 .modal-text {
@@ -121,11 +132,16 @@ form-modal {
 	text-align: center;
 	background-color: red;
 	color: white;
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-bottom: 50px;
 	padding: 10px;
 	font-size: 18px;
  	box-shadow: 10px 10px 5px #888888;
-	border-radius: 8px;
+	border-radius: 10px;
+}
+
+input.form-format {
+	border-radius: 10px;
 }
 
 .left-button {
@@ -133,10 +149,11 @@ form-modal {
 	bottom: 0;
 	left: 0;
 	box-shadow: none;
-	margin: 10px;
+	margin: 30px;
 	border-type: solid;
 	border-color: white;
 	border-size: 4px;
+	border-radius: 10px;
 }
 
 .right-button {
@@ -144,10 +161,11 @@ form-modal {
 	bottom: 0;
 	right: 0;
 	box-shadow: none;
-	margin: 10px;
+	margin: 30px;
 	border-type: solid;
 	border-color: white;
 	border-size: 4px;
+	border-radius: 10px;	
 }
 
 .finished-header {
@@ -159,6 +177,7 @@ form-modal {
 
 #form-data {
 	display:none;
+	margin-top: 40px;
 }
 
 #summary-message {
@@ -171,28 +190,39 @@ form-modal {
 	vertical-align: top;
 }
 
-.final-font {
-	display: inline-block;
-	width: 40%;
-	margin: 5%;
+.finale {
+	line-height: 40px;
 }
 
-.side-image {
+.final-font {
 	display: inline-block;
 	width: 30%;
 	margin: 5%;
 }
 
+.side-image {
+	display: inline-block;
+	width: 35%;
+	margin: 5%;
+}
+
+.filled-form {
+	font-size: 20px;
+}
+
+.field-data {
+	font-size: 20px;
+	font-weight: bold;
+}
 
 #closing-fireworks {
 	display: none;
-	width: 80%;
+	width: 100%;
 }
 
 footer {
 	text-align: center;
 	margin-top: 14px;
 	bottom: 0;
-	position: fixed;
 	width: 100%;
 }

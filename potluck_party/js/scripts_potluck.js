@@ -35,7 +35,7 @@ $(document).ready(function() {
 		$("#modal2").hide();
 		$("#modal1").show();
 		$(".progress").css({"background-color":"red"});
-		$(".progress").animate({"width":"33%" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").animate({"animation-duration":"10s" , "width":"33%" , "border-radius":"8px" , "height":"20px"});
 	});
 	
 	/* user option to forward to 3rd modal window */
