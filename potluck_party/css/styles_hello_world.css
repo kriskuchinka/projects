@@ -49,7 +49,12 @@
 .form-format {
 	text-align: left;
 	padding: 10px;
-	margin: 8px;
+	margin: 10px;
+}
+
+.dish-choices, .serving-size {
+	border-radius: 10px;
+	font-size: 14px;
 }
 
 .progress-text {
@@ -72,13 +77,20 @@
 	border-radius: 10px;
 }
 
+.progress {
+	transition: all 1s;
+	width: 0%;
+	background-color: red;
+	border-radius: 8px;
+	height: 20px;
+}
 
 .modal-window {
 	position: relative;
 	border-style: solid;
 	border-size: 6px;
 	border-color: black;
-	height: 400px;
+	height: 500px;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -178,6 +190,7 @@ input.form-format {
 #form-data {
 	display:none;
 	margin-top: 40px;
+	margin: 20px;
 }
 
 #summary-message {
@@ -222,7 +235,7 @@ input.form-format {
 
 footer {
 	text-align: center;
-	margin-top: 14px;
+	margin-top: 50px;
 	bottom: 0;
 	width: 100%;
 }
