@@ -10,7 +10,7 @@ $(document).ready(function() {
 		$("#welcome-par").hide();		
 		$("#hero-fireworks").hide();
 		$(".progress-bar").show();
-		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").css({"background-color":"red" , "transition":" all 1s" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* give user exit option, show original starting point, remove progress bar */
@@ -21,26 +21,30 @@ $(document).ready(function() {
 		$("#welcome-par").show();
 		$("#modal-start").show();
 	});
+
+	$("#modal-start").click(function() {
+		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
+	});
 	
 	/* user option to move forward to 2nd modal window */
 	$("#change-1").click(function() {
 		$("#modal1").hide();
 		$("#modal2").show();
-		$(".progress").css({"background-color":"red" , "width":"66%" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").css({"background-color":"red" , "width":"66%" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* user option to switch to previous modal screen, progress bar regresses */
 	$("#reverse-1").click(function() {
 		$("#modal2").hide();
 		$("#modal1").show();
-		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* user option to forward to 3rd modal window */
 	$("#change-2").click(function() {
 		$("#modal2").hide();
 		$("#modal3").show();
-		$(".progress").css({"width":"100%" , "background-color":"red" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").css({"width":"100%" , "background-color":"red" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* user option to switch to previous modal screen, progress bar regresses */
@@ -48,7 +52,7 @@ $(document).ready(function() {
 		$("#modal3").hide()
 		$("#modal2").show();
 		$(".progress").css({"background-color":"red"});
-		$(".progress").css({"width":"66%" , "border-radius":"8px" , "height":"20px"});
+		$(".progress").css({"width":"66%" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* Capture form data and display on submit*/
