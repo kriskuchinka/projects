@@ -1,6 +1,8 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "blooming elegant sans";
+	/*font-size: 40px;*/
 }
 
 #main-head, .finished-header {
@@ -231,6 +233,11 @@ input.form-format {
 #closing-fireworks {
 	display: none;
 	width: 100%;
+}
+
+.fa-color-reverse {
+	background-color: white;
+	/*color: black;*/
 }
 
 footer {
