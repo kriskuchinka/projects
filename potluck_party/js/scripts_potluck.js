@@ -6,7 +6,7 @@ $(document).ready(function() {
 	// });
 	$(".fa-info").click(function() {
 		$(".explaination-window").toggle({"display":"block"});
-		$("#explain-site").css({"height":"100%" , "width":"100%" , "background-color":"gray" , "color":"white" , "font-size":"26px"});
+		$("#explain-site").css({"height":"100%" , "width":"100%" , "font-size":"26px"});
 		// $("body").css({"margin-bottom":"50px"});
 	});
 	
