@@ -72,6 +72,7 @@ body {
 	background-color: gray;
     height: 24px;
     border-radius: 10px;
+    margin-top: 40px;    
 }
 
 .form-modal {
@@ -102,8 +103,6 @@ body {
 .exit {
 	text-align: right;
 	color: white;
-/*	padding-right: -4px;
-	padding-top: -4px;*/
 	cursor: pointer;
 }
 
@@ -124,8 +123,8 @@ body {
 	border-style: solid;
 	border-size: 6px;
 	border-color: black;
-	height: 500px;
-	width: 80%;
+	height: 400px;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: blue;
@@ -218,7 +217,7 @@ input.form-format {
 .finished-header {
 	display:none;
 	text-align: center;
-	padding-top: 18px;
+	line-height: 40px;
 	color: red;
 }
 
@@ -252,6 +251,7 @@ input.form-format {
 	display: inline-block;
 	width: 35%;
 	margin: 5%;
+    margin-top: 140px;	
 }
 
 .filled-form {
