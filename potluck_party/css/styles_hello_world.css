@@ -94,6 +94,8 @@ body {
 
 input.form-format {
 	font-size: 30px;
+	cursor: pointer;
+    border-radius: 10px;
 }
 
 .dish-choices, .serving-size {
@@ -195,10 +197,6 @@ input.form-format {
  	box-shadow: 10px 10px 5px #888888;
 	border-radius: 10px;
 	cursor: pointer;
-}
-
-input.form-format {
-	border-radius: 10px;
 }
 
 .left-button {
