@@ -1,14 +1,6 @@
 To Do: Potluck Party
 
---> Fix progress bar so it animates from 0-33%
-
---> Hover over X and info circle shows different cursor
-
---> Change FA info icon color change inversely
-
 --> Fix alignment of radio buttons and form text on second modal window
-
---> Make an explanation of the goals for the portfolio piece that displays on hover over info FA symbol in footer
 
 --> Add php file specifically to make sending email of "additional comments" to my email address
 
