@@ -2,6 +2,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "blooming elegant sans";
+	letter-spacing: 2px;	
 }
 
 body {
@@ -23,6 +24,8 @@ body {
 
 .explaination-window {
 	display: none;
+	width: 96%;	
+	line-height: 30px;
 }
 
 #main-head, .finished-header {
@@ -84,6 +87,12 @@ body {
 	text-align: left;
 	padding: 10px;
 	margin: 10px;
+    width: 40%;
+    font-size: 20px;
+}
+
+input.form-format {
+	font-size: 30px;
 }
 
 .dish-choices, .serving-size {
@@ -123,7 +132,7 @@ body {
 	border-style: solid;
 	border-size: 6px;
 	border-color: black;
-	height: 400px;
+    height: 580px;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -139,6 +148,7 @@ body {
 
 .modal-text {
 	margin-bottom: 16px;
+    font-size: 34px;	
 }
 
 .drop-down {
