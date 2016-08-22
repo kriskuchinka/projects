@@ -1,13 +1,9 @@
 $(document).ready(function() {
 
-	/* display site info on hover */
-	// $("#explain-site").toggle(function() {
-	// 	$(".explaination-text").show();
-	// });
+
 	$(".fa-info").click(function() {
 		$(".explaination-window").toggle({"display":"block"});
 		$("#explain-site").css({"height":"100%" , "width":"100%" , "font-size":"26px"});
-		// $("body").css({"margin-bottom":"50px"});
 	});
 	
 

@@ -24,8 +24,9 @@ body {
 
 .explaination-window {
 	display: none;
-	width: 96%;	
+	width: 92%;	
 	line-height: 30px;
+	margin: 0 4%;
 }
 
 #main-head, .finished-header {
@@ -121,10 +122,10 @@ input.form-format {
 
 .progress {
 	transition: all 2s;
-	display:none;
 	background-color: red;
     height: 24px;
     border-radius: 10px;
+    width: 0px;
 }
 
 .modal-window {
