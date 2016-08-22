@@ -1,4 +1,15 @@
-$(document).ready(function() {		
+$(document).ready(function() {
+
+	/* display site info on hover */
+	// $("#explain-site").toggle(function() {
+	// 	$(".explaination-text").show();
+	// });
+	$(".fa-info").click(function() {
+		$(".explaination-window").toggle({"display":"block"});
+		$("#explain-site").css({"height":"100%" , "width":"100%" , "background-color":"gray" , "color":"white" , "font-size":"26px"});
+		// $("body").css({"margin-bottom":"50px"});
+	});
+	
 
 	/* begin sign up, bring up modal window */
 	$("#modal-start").click(function(){
@@ -10,7 +21,8 @@ $(document).ready(function() {
 		$("#welcome-par").hide();		
 		$("#hero-fireworks").hide();
 		$(".progress-bar").show();
-		$(".progress").css({"background-color":"red" , "transition":" all 1s" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").show();
+		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
 	});
 	
 	/* give user exit option, show original starting point, remove progress bar */
@@ -22,9 +34,9 @@ $(document).ready(function() {
 		$("#modal-start").show();
 	});
 
-	$("#modal-start").click(function() {
-		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
-	});
+	// $("#modal-start").click(function() {
+	//	$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
+	// });
 	
 	/* user option to move forward to 2nd modal window */
 	$("#change-1").click(function() {
