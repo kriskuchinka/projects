@@ -7,3 +7,5 @@ To Do: Potluck Party
 --> Create JS validation for the form on each modal window
 
 --> Once desktop version is finished, make media queries for tablet size and phone size
+
+--> Use RegEx to make phone number in (xxx)xxx-xxxx format
