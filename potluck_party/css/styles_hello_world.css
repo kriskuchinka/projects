@@ -206,26 +206,16 @@ h1.modal-text {
 
 .left-button {
 	position: absolute;
-/*	bottom: 0;
-	left: 0;*/
 	box-shadow: none;
-/*	margin: 30px;*/
-	/*border: .1em solid white;*/
-	/*border-color: white;*/
-/*	border-size: 4px;
-	border-radius: 10px;*/
+    bottom: 0;	
 }
 
 .right-button {
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	box-shadow: none;
-	margin: 30px;
-	border-type: solid;
-	border-color: white;
-	border-size: 4px;
-	border-radius: 10px;	
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+    margin-right: 1em;	
 }
 
 .finished-header {
