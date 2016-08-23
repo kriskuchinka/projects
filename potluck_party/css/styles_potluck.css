@@ -195,7 +195,7 @@ h1.modal-text {
     box-shadow: .4em .4em .4em #888888;
     border-radius: .4em;
     cursor: pointer;
-    border: .1em solid white;
+    border: .15em solid black;
 }
 
 .left-button {
@@ -259,6 +259,8 @@ h1.modal-text {
 #closing-fireworks {
 	display: none;
 	width: 100%;
+    border: solid .5em black;
+    border-radius: .6em;	
 }
 
 .food-preferences {
