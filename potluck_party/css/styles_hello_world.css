@@ -123,7 +123,13 @@ input.form-format {
 }
 
 .suggestions {
-	border-radius: 10px;
+	border-radius: .4em;
+	margin-top: 1em;
+}
+
+textarea.suggestions {
+	font-size: 2em;
+	cursor: pointer;
 }
 
 .modal-window {
@@ -164,18 +170,18 @@ h1.modal-text {
 }
 
 .dish-choices, .serving-size {
-    margin: .8em;
+    margin: .3em;
     width: 10em;
     font-size: 1.4em;
     cursor: pointer;
     border-radius: .4em;
 }
 
-.align-form {
+/*.align-form {
 	width: 30%;
 	margin: 0 auto;
 	text-align: right;
-}
+}*/
 
 /*.dish-choices {
 	padding: 20px;
@@ -273,6 +279,16 @@ h1.modal-text {
 #closing-fireworks {
 	display: none;
 	width: 100%;
+}
+
+.food-preferences {
+	margin-top: .6em;
+}
+
+.food-checks {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 40%;
 }
 
 footer {
