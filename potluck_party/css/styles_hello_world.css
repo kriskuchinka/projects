@@ -2,7 +2,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "blooming elegant sans";
-    letter-spacing: .05em;	
+    letter-spacing: .05em;
 }
 
 body {
@@ -37,33 +37,31 @@ body {
     margin-top: .8em;	
 }
 
+.welcome-text {
+	text-align: center;
+	line-height: 1.5em;
+    font-size: 2.4em;	
+}
+
+.welcome-heading {
+ 	margin-top: .8em;
+    line-height: 1em;
+    font-size: 2em;
+}
+
 .welcome-info {
     width: 70%;
     margin-right: 15%;
     margin-left: 15%;
-	font-size: 44px;
-	line-height: 1.5em;
-}
-
-.welcome-text {
-	text-align: center;
-	line-height: 40px;
-	font-size: 40px;	
-}
-
-.welcome-heading {
-	margin-top: 20px;
-	line-height: 40px;
-	font-size: 40px;
 }
 
 .fireworks-img {
 	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 20px;
-    border: solid 10px blue;
-    border-radius: 5px;	
+    margin-top: 1em;
+    border: solid .5em blue;
+    border-radius: 1em;	
 }
 
 .progress-bar {
@@ -190,16 +188,15 @@ h1.modal-text {
 .site-button {
 	margin: auto;
 	display: block;
-	text-align: center;
 	background-color: red;
-	color: white;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	padding: 10px;
-	font-size: 30px;
- 	box-shadow: 10px 10px 5px #888888;
-	border-radius: 10px;
-	cursor: pointer;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .4em;
+    font-size: 2em;
+    box-shadow: .4em .4em .4em #888888;
+    border-radius: .4em;
+    cursor: pointer;
 }
 
 .left-button {
@@ -282,12 +279,10 @@ h1.modal-text {
 
 footer {
 	text-align: center;
-	margin-top: 50px;
-	bottom: 0;
-	width: 100%;
+    font-size: 2em;
+    margin-top: 2em;
 }
 
-/*enlarges footer font to match FA icon for copyright*/
-.larger-footer {
-	font-size: 26px;
+i.fa-copyright {
+    font-size: .8em;
 }
