@@ -3,7 +3,7 @@ $(document).ready(function() {
 	 // hide and show information when icon is clicked on 
 	$(".fa-info").click(function() {
 		$(".explaination-window").toggle({"display":"block"});
-		$("#explain-site").css({"height":"100%" , "width":"100%" , "font-size":"26px"});
+		// $("#explain-site").css({"height":"100%" , "width":"100%" , "font-size":"26px"});
 	});
 	
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$("#hero-fireworks").hide();
 		$(".progress-bar").show();
 		$(".progress").show();
-		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").css({"width":"33%"});
 	});
 	
 	 // give user exit option, show original starting point, remove progress bar 
@@ -34,21 +34,21 @@ $(document).ready(function() {
 	$("#change-1").click(function() {
 		$("#modal1").hide();
 		$("#modal2").show();
-		$(".progress").css({"background-color":"red" , "width":"66%" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").css({"width":"66%"});
 	});
 	
 	 // user option to switch to previous modal screen, progress bar regresses 
 	$("#reverse-1").click(function() {
 		$("#modal2").hide();
 		$("#modal1").show();
-		$(".progress").css({"background-color":"red" , "width":"33%" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").css({"width":"33%"});
 	});
 	
 	 // user option to forward to 3rd modal window 
 	$("#change-2").click(function() {
 		$("#modal2").hide();
 		$("#modal3").show();
-		$(".progress").css({"width":"100%" , "background-color":"red" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").css({"width":"100%"});
 	});
 	
 	 // user option to switch to previous modal screen, progress bar regresses 
@@ -56,7 +56,7 @@ $(document).ready(function() {
 		$("#modal3").hide()
 		$("#modal2").show();
 		$(".progress").css({"background-color":"red"});
-		$(".progress").css({"width":"66%" , "border-radius":"10px" , "height":"24px"});
+		$(".progress").css({"width":"66%"});
 	});
 	
 	 // Capture form data and display on submit

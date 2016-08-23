@@ -33,13 +33,11 @@ body {
 	text-align: center;
 	color: red;
     font-size: 4em;
-    line-height: 1.5em;
     margin-top: .8em;	
 }
 
 .welcome-text {
 	text-align: center;
-	line-height: 1.5em;
     font-size: 2.4em;	
 }
 
@@ -60,8 +58,8 @@ body {
 	margin-left: 20%;
 	margin-right: 20%;
     margin-top: 1em;
-    border: solid .5em blue;
-    border-radius: 1em;	
+    border: solid .5em black;
+    border-radius: .6em;
 }
 
 .progress-bar {
@@ -70,9 +68,17 @@ body {
 	margin-left: 25%;
 	margin-right: 25%;
 	background-color: gray;
-    height: 24px;
-    border-radius: 10px;
-    margin-top: 40px;    
+    height: 1.6em;
+    border-radius: 1em;
+    margin-top: 1em;    
+}
+
+.progress {
+	transition: all 2s;
+	background-color: red;
+    height: 1.6em;
+    border-radius: 1em;
+    width: 0;
 }
 
 .form-modal {
@@ -119,14 +125,6 @@ input.form-format {
 	border-radius: 10px;
 }
 
-.progress {
-	transition: all 2s;
-	background-color: red;
-    height: 24px;
-    border-radius: 10px;
-    width: 0px;
-}
-
 .modal-window {
 	position: relative;
 	border-style: solid;
@@ -151,8 +149,13 @@ h1.modal-text {
 }
 
 .modal-text {
-	margin-bottom: 16px;
-    font-size: 34px;	
+    text-align: center;
+    font-size: 2.4em;	
+}
+
+.modal-subtext {
+	text-align: center;
+	font-size: 1.6em;
 }
 
 .drop-down {
