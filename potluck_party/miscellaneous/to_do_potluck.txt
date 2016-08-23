@@ -13,3 +13,7 @@ To Do: Potluck Party
 --> Use RegEx to make email in xxxx@xxx.com format
 
 --> Make JS checkboxes display checked or not checked in Data Form field
+
+--> ????? Set up SQL DB once PHP is implemented ?????
+
+--> Have JS entered data display appropriate words in data form in the event that a drop down menu or checkbox is not filled in correctly
