@@ -11,3 +11,5 @@ To Do: Potluck Party
 --> Use RegEx to make phone number in (xxx)xxx-xxxx format
 
 --> Use RegEx to make email in xxxx@xxx.com format
+
+--> Make JS checkboxes display checked or not checked in Data Form field
