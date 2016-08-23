@@ -95,9 +95,9 @@ body {
 }
 
 input.form-format {
-	font-size: 30px;
-	cursor: pointer;
-    border-radius: 10px;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: .4em;
 }
 
 .dish-choices, .serving-size {
@@ -119,6 +119,7 @@ input.form-format {
 	text-align: right;
 	color: white;
 	cursor: pointer;
+	margin: -.6em -.6em .4em 0em;
 }
 
 .suggestions {
@@ -190,28 +191,29 @@ h1.modal-text {
 
 .site-button {
 	margin: auto;
-	display: block;
-	background-color: red;
+    display: block;
+    background-color: red;
     color: white;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .4em;
-    font-size: 2em;
+    font-size: 1.8em;
     box-shadow: .4em .4em .4em #888888;
     border-radius: .4em;
     cursor: pointer;
+    border: .1em solid white;
 }
 
 .left-button {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+/*	bottom: 0;
+	left: 0;*/
 	box-shadow: none;
-	margin: 30px;
-	border-type: solid;
-	border-color: white;
-	border-size: 4px;
-	border-radius: 10px;
+/*	margin: 30px;*/
+	/*border: .1em solid white;*/
+	/*border-color: white;*/
+/*	border-size: 4px;
+	border-radius: 10px;*/
 }
 
 .right-button {
