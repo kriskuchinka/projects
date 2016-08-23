@@ -29,11 +29,18 @@ body {
 	margin: 0 4%;
 }
 
-#main-head, .finished-header {
+#main-head {
+	text-align: center;
+	color: red;
+    font-size: 4em;;
+    margin-top: 1.4em;	
+}
+
+.finished-header {
 	text-align: center;
 	color: red;
     font-size: 2.5em;
-    margin-top: 1.4em;	
+	margin-top: 1.4em;
 }
 
 .welcome-text {
@@ -68,9 +75,10 @@ body {
 	margin-left: 25%;
 	margin-right: 25%;
 	background-color: gray;
-    height: 1.6em;
+    height: 2em;
     border-radius: 1em;
-    margin-top: 1em;    
+    margin-top: 1em;
+    border: .2em solid black;    
 }
 
 .progress {
@@ -96,6 +104,7 @@ input.form-format {
     font-size: 1.4em;
     cursor: pointer;
     border-radius: .4em;
+    border: .2em solid black;    
 }
 
 .dish-choices, .serving-size {
@@ -127,6 +136,8 @@ input.form-format {
 textarea.suggestions {
 	font-size: 2em;
 	cursor: pointer;
+    border: .2em solid black;
+    padding: .5em;	
 }
 
 .modal-window {
@@ -173,6 +184,7 @@ h1.modal-text {
     font-size: 1.4em;
     cursor: pointer;
     border-radius: .4em;
+    border: .2em solid black;    
 }
 
 .form-modal-1 {
