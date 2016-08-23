@@ -9,3 +9,5 @@ To Do: Potluck Party
 --> Once desktop version is finished, make media queries for tablet size and phone size
 
 --> Use RegEx to make phone number in (xxx)xxx-xxxx format
+
+--> Use RegEx to make email in xxxx@xxx.com format

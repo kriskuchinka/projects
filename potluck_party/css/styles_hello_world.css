@@ -164,8 +164,11 @@ h1.modal-text {
 }
 
 .dish-choices, .serving-size {
-	margin: 10px;
-	width: 60%;
+    margin: .8em;
+    width: 10em;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: .4em;
 }
 
 .align-form {
@@ -174,9 +177,9 @@ h1.modal-text {
 	text-align: right;
 }
 
-.dish-choices {
+/*.dish-choices {
 	padding: 20px;
-}
+}*/
 
 .form-modal-1 {
 	text-align: center;

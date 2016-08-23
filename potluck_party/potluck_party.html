@@ -72,7 +72,9 @@
 						<option value="Dessert">Dessert</option>
 						<option value="Other">Other</option>
 					</select></p>
-					
+			</form> <!-- end of form-modal/form-modal-2 div -->
+
+			<form class="form-modal form-modal-2">		
 					<p><select id="servings" class="serving-size">
 						<option value="first-option">Number of Servings</option>
 						<option value="Less than Five">Less than 5</option>
@@ -82,11 +84,16 @@
 					</select></p>
 				</span> <!-- end of drop-down span -->
 				
-				<p>Gluten Free: <input type="radio" name="gluten-status" value="yes" class="form-format gluten-check" id="gluten-yes">Yes<input type="radio" name="gluten-status" value="no" class="form-format gluten-check" id="gluten-no">No</p>
-				<p>Vegan: <input type="radio" name="vegan-status" value="yes" class="form-format vegan-check" id="vegan-yes">Yes<input type="radio" name="vegan-status" value="no" class="form-format vegan-check" id="vegan-no">No</p>
-				<p>Organic: <input type="radio" name="organic-status" value="yes" class="form-format organic-check" id="organic-yes">Yes<input type="radio" name="organic-status" value="no" class="form-format organic-check" id="organic-no">No</p>
+				<p class="special-food">Gluten Free:</p> 
+				<p class="food-radio"><input type="radio" name="gluten-status" value="yes" class="form-format gluten-check" id="gluten-yes">Yes<input type="radio" name="gluten-status" value="no" class="form-format gluten-check" id="gluten-no">No</p>
+				<p class="special-food">Vegan:</p>
+				<p class="food-radio"><input type="radio" name="vegan-status" value="yes" class="form-format vegan-check" id="vegan-yes">Yes<input type="radio" name="vegan-status" value="no" class="form-format vegan-check" id="vegan-no">No</p>
+				<p class="special-food">Organic:</p> 
+				<p class="food-radio"><input type="radio" name="organic-status" value="yes" class="form-format organic-check" id="organic-yes">Yes</p>
+				<p class="food-radio"><input type="radio" name="organic-status" value="no" class="form-format organic-check" id="organic-no">No</p>
 			</form> <!-- end of form-modal, form-modal-2 -->
 		</div> <!-- end of form-alignment div -->	
+		
 		<button class="site-button left-button" id="reverse-1">Previous Window</button>
 		<button class="site-button right-button" id="change-2">Next Window</button>
 	</div> <!-- end of #modal2 div -->
