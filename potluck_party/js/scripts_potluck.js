@@ -110,5 +110,15 @@ $(document).ready(function() {
 		$("#form-data").html("<p> <span class='field-data'> Name: </span> <span class='entered-data'>" + fname + " " + lname + "</span> </p> <p> <span class='field-data'> Email: </span> <span class='entered-data'>" + email + "</span> </p> <p> <span class='field-data'> Phone Number: </span> <span class='entered-data'>" + phone + "</span> </p ><p> <span class='field-data'> Potluck Dish: </span> <span class='entered-data'>" + dish + "</span> </p> <p> <span class='field-data'> Servings: </span> <span class='entered-data'>" + servings + "</span> </p> <p> <span class='field-data'> Gluten Free: </span> <span class='entered-data'>" + gluten + "</span> </p> <p> <span class='field-data'>Vegan: </span> <span class='entered-data'>" + vegan + "</span> </p> <p> <span class='field-data'> Organic: </span> <span class='entered-data'>" + organic + "</span> </p> <p> <span class='field-data'> Additional Notes: </span> <span class='entered-data'>" + comments + "</span> </p>");
 		
 	}); // end of change-3 click
+
+
+	// Begin client side form validation
+		function validateModal1() {
+			var fname = document.getElementById("#first-name");
+			if (fname == null || fname == "") {
+				alert("Please fill out your first name.");
+				return false;
+			}
+		} // end of function validateModal1
 	
  }); // end of ready 
