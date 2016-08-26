@@ -113,12 +113,13 @@ $(document).ready(function() {
 
 
 	// Begin client side form validation
-		function validateModal1() {
-			var fname = document.getElementById("#first-name");
-			if (fname == null || fname == "") {
-				alert("Please fill out your first name.");
-				return false;
-			}
-		} // end of function validateModal1
+	function validateModal1() {
+		var fname = document.getElementById("#first-name");
+		if (fname == null || fname == "") {
+			alert("Please fill out your first name.");
+			// return false;
+		}
+	$("#change-1").click(validateModal1);
+	} // end of function validateModal1
 	
  }); // end of ready 
