@@ -5,9 +5,9 @@ $(document).ready(function() {
 	$("#hamburger-menu").click(function() {
 		if (hamburger_menu == 0) {
 			$("#drawer-list").css({"display":"inline-block"});
-			$("#bar-1").css({"transform":"rotate(45deg)"});
+			$("#bar-1").css({"transform":"rotate(45deg)" , "top":"0"});
 			$("#bar-2").css({"opacity":"0"});
-			$("#bar-3").css({"transform":"rotate(-45deg)"});
+			$("#bar-3").css({"transform":"rotate(-45deg)" , "bottom":"0"});
 			hamburger_menu = 1;
 		} else if (hamburger_menu == 1) {
 		$("#bar-1").css({"transform":"rotate(0deg)"});
