@@ -5,6 +5,35 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	padding: 1em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+/* set up hidden menu */
+.site-wrap {
+	width: 100%;
+	position: relative;
+	transition: all .3s;
+	padding: 5px;
+	height: 100%;
+	line-height: 1.3em;
+}
+
+.menu {
+	width: 15%;
+	height: 100%;
+	background-color: green;
+	position: fixed;
+	top: 0px;
+	right: -15%;
+	transition: all .3s;
 }
 
 /* begin hamburger menu styling */
@@ -18,7 +47,7 @@ body {
     padding: 0;
     width: 7em;
     height: 7em;
-    top: -32px;
+    /*top: 1em;*/
 /*   text-indent: -9999px; */
   	appearance: none;
   	box-shadow: none;
@@ -98,7 +127,7 @@ body {
 }
 
 .hamburger.is-active span::before {
-  	top: 0;
+  	top: 1em;
   	transform: rotate(45deg);
 }
 
@@ -119,8 +148,8 @@ body {
 .welcome-heading {
     text-align: center;
     padding: 10px;
-    top: 0;
-    position: fixed;
+    /*top:1em ;*/
+    /*position: fixed;*/
     width: 100%;
 /*    margin-bottom: 10px;
     height: 3em;*/
@@ -129,7 +158,7 @@ body {
 .welcome-heading-2 {
 	text-align: center;
     padding: 10px;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     margin-bottom: 10px;
     height: 3em;
@@ -153,13 +182,13 @@ body {
 	height: 3px;
 	margin: 4px 0;
 }*/
-
+/*
 #drawer-list {
 	display: none;
 	float: right;
 	background-color: gray;
 	width: 100px;
-}
+}*/
 
 
 .site-url {

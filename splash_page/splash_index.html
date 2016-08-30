@@ -19,38 +19,28 @@
 
 <body>
 
-	
-	<!-- create hamburger menu icon -->
-	<button class="hamburger">
-  		<span class="toggle-menu"></span>
-	</button>
-
-	
-	<!-- portfolio list -->
-	<section class="hidden-list" id="drawer-list">
-		<ul>
-			<li>Important List Things</li>
-		</ul>
-	</section>
-	
-	
-	
 	<!-- need to house all content in site-wrap to make hamburger menu -->
 	<section class="site-wrap" id="site-wrap">
-		
-		<h1 class="welcome-heading">Welcome to <span class="site-url">kriskcodes.com</span>!</h1>
 
-		<h3 class="welcome-heading-2">Please keep checking back and feel free to explore. Thank you for your interest.</h3>
+		<!-- create hamburger menu icon -->
+		<button class="hamburger">
+	  		<span class="toggle-menu"></span>
+		</button>
+
+		<section class="heading">
+			<h1 class="welcome-heading">Welcome to <span class="site-url">kriskcodes.com</span>!</h1>
+
+			<h2 class="welcome-heading-2">Please keep checking back and feel free to explore. Thank you for your interest.</h2>
+		</section>
+
 		
 		<section class="dual-sides">
-			
+			<!-- display "hero image" of kris -->
 			<div class="side side-1">
-				<!-- <img class="hero-image" src="images/kris_landscape.jpeg"> -->
 				<img class="hero-image" src="images/kris_landscape.jpg" alt="Kris Kuchinka">
 			</div> <!-- end of side-1 -->
-			
+			<!-- main content and information, text, etc -->
 			<div class="side side-2">
-				
 				<h1 class="section-heading meet-heading" id="expand-meet-kris"><i class="fa fa-arrow-down meet-kris-arrow" aria-hidden="true"></i>Meet Kris Kuchinka</h1>
 				<div class="text meet-text" id="meet-kris">
 					<p>Born in southern California, Kris' family moved to Portland, Oregon when he was four years old. Kris lived in the Portland/Vancouver area for over two decades before settling down with his wife in Vancouver, Washington.</p>
@@ -96,11 +86,19 @@
 			</div> <!-- end of side-2 div -->
 			
 		</section> <!-- end of dual-sides sect -->
-		
+
 		<footer>
 			<p>&copy;2016 Kris Kuchinka
 		</footer>
+
 	</section> <!-- end of section site-wrap -->
+
+	<!-- portfolio list -->
+	<section class="menu hidden-list" id="drawer-list">
+		<ul>
+			<li>Important List Things</li>
+		</ul>
+	</section>
 	
 </body>
 </html>

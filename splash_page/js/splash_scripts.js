@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+	// Create menu slide effect
+	var menuopen = 0;
+	$(".hamburger").click(function(e) {
+		// e.stopPropagation();
+		if(menuopen==0) {
+			$(".site-wrap").css({"left":"-15%"});
+			$(".menu").css({"right":"0%"});	
+			menuopen=1;
+		} else {
+			$(".site-wrap").css({"left":"0%"});
+			$(".menu").css({"right":"-15%"});
+			menuopen=0;
+		}
+	});
+
 	/* toggle between hamburger and X on click */
 
 	// Animate Hamburger
