@@ -3,27 +3,138 @@
 	box-sizing: border-box;
 }
 
-html {
+body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.welcome-heading {
-	text-align: center;
-	padding: 10px;
-	top: 0;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-	background-color: #eee;
-	margin-bottom: 10px;
-	height: 10%;
-	background: gray; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(gray, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(gray, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(gray, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(gray, white); /* Standard syntax (must be last) */
+/* begin hamburger menu styling */
+/* CSS to begin hamburger menu */
+.hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 7em;
+    height: 7em;
+    top: -32px;
+/*   text-indent: -9999px; */
+  	appearance: none;
+  	box-shadow: none;
+  	border-radius: none;
+  	border: none;
+  	cursor: pointer;
+  	transition: background 0.3s;
 }
 
+.hamburger:focus {
+  	outline: none;
+}
+
+/* Create Hamburger Lines */
+.hamburger span {
+  	display: block;
+  	position: absolute;
+  	top:  3em;
+  	left: 1em;
+  	right: 1em;
+  	height: .7em;
+  	background: #000000;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  	position: absolute;
+  	display: block;
+  	left: 0;
+  	width: 100%;
+  	height: .7em;
+  	background-color: #000000;
+  	content: "";
+  	z-index: 9999;  	  	
+}
+
+.hamburger span::before {
+  	top: -1.3em;
+}
+
+.hamburger span::after {
+  	bottom: -1.3em;
+}
+
+/* Animate Hamburger */
+
+/* for splash page, I need to figure out the appropriate background color to use against the gradient gray */
+.hamburger {
+  	background-color: #ffffff;
+}
+
+.hamburger span {
+  	transition: background 0s .3s;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  	transition-duration: 0.3s, 0.3s;
+  	transition-delay: 0.3s, 0s;
+}
+
+.hamburger span::before {
+  	transition-property: top, transform;
+}
+
+.hamburger span::after {
+  	transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.hamburger.is-active {
+ 	background-color: #ffffff;
+}
+
+.hamburger.is-active span {
+  	background: none;
+}
+
+.hamburger.is-active span::before {
+  	top: 0;
+  	transform: rotate(45deg);
+}
+
+.hamburger.is-active span::after {
+  	bottom: 0;
+  	transform: rotate(-45deg);
+}
+
+.hamburger.is-active span::before,
+.hamburger.is-active span::after {
+  	transition-delay: 0s, 0.3s;
+}
+
+/* end hamburger menu styling */
+
+
+
+.welcome-heading {
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+/*    margin-bottom: 10px;
+    height: 3em;*/
+}
+
+.welcome-heading-2 {
+	text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 3em;
+}
+/*
 .menu-icon {
 	position: fixed;
 	z-index: 90;
@@ -33,15 +144,15 @@ html {
 	margin-right: 20px;
 	width: 30px;
 	padding: 10px;
-}
+}*/
 
-.bar {
+/*.bar {
 	width: 30px;
 	background-color: black;
 	display: block;
 	height: 3px;
 	margin: 4px 0;
-}
+}*/
 
 #drawer-list {
 	display: none;

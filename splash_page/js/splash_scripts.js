@@ -1,27 +1,51 @@
 $(document).ready(function() {
 
-	/* on click, turn into an X or back to a hamburger */
-	var hamburger_menu = 0;
-	$("#hamburger-menu").click(function() {
-		if (hamburger_menu == 0) {
-			$("#drawer-list").css({"display":"inline-block"});
-			$("#bar-1").css({"transform":"rotate(45deg)" , "top":"0"});
-			$("#bar-2").css({"opacity":"0"});
-			$("#bar-3").css({"transform":"rotate(-45deg)" , "bottom":"0"});
-			hamburger_menu = 1;
-		} else if (hamburger_menu == 1) {
-		$("#bar-1").css({"transform":"rotate(0deg)"});
-		$("#bar-2").css({"opacity":"1"});
-		$("#bar-3").css({"transform":"rotate(0deg)"});
-		hamburger_menu = 0;
-		} 
-	});
+	/* toggle between hamburger and X on click */
+
+	// Animate Hamburger
+
+	(function() {
+		"use strict";
+
+		var toggles = document.querySelectorAll(".hamburger");
+
+		for (var i = toggles.length - 1; i >= 0; i--) {
+			var toggle = toggles[i];
+	   		toggleHandler(toggle);
+		};
+
+		function toggleHandler(toggle) {
+			toggle.addEventListener( "click", function(e) {
+				e.preventDefault();
+				(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    		}); // end of click function
+  		} // end function toggleHandler
+
+	})();
+
+
+
+	// var hamburger_menu = 0;
+	// $("#hamburger-menu").click(function() {
+	// 	if (hamburger_menu == 0) {
+	// 		$("#drawer-list").css({"display":"inline-block"});
+	// 		$("#bar-1").css({"transform":"rotate(45deg)" , "top":"0"});
+	// 		$("#bar-2").css({"opacity":"0"});
+	// 		$("#bar-3").css({"transform":"rotate(-45deg)" , "bottom":"0"});
+	// 		hamburger_menu = 1;
+	// 	} else if (hamburger_menu == 1) {
+	// 	$("#bar-1").css({"transform":"rotate(0deg)"});
+	// 	$("#bar-2").css({"opacity":"1"});
+	// 	$("#bar-3").css({"transform":"rotate(0deg)"});
+	// 	hamburger_menu = 0;
+	// 	} 
+	// });
 	
 	/* on click menu trigger displays drawer */
 
-	$("#hamburger-menu").click(function() {
-		$(".site-wrap").css({"margin-right":"300px"});
-	});
+	// $("#hamburger-menu").click(function() {
+	// 	$(".site-wrap").css({"margin-right":"300px"});
+	// });
 	
 	/* display toggle and FA arrow effect on click meet kris */
 	var meet_kris_arrow = 0;
