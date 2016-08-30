@@ -3,14 +3,20 @@ $(document).ready(function() {
 	// Create menu slide effect
 	var menuopen = 0;
 	$(".hamburger").click(function(e) {
-		// e.stopPropagation();
+
 		if(menuopen==0) {
 			$(".site-wrap").css({"left":"-15%"});
 			$(".menu").css({"right":"0%"});	
+			$(".hamburger").css({"right":"15%"});
+			$(".heading").css({"left":"-15%"});
+			$(".toggle-menu").css({"height":"1.7em"});
 			menuopen=1;
 		} else {
 			$(".site-wrap").css({"left":"0%"});
 			$(".menu").css({"right":"-15%"});
+			$(".hamburger").css({"right":"0"});
+			$(".heading").css({"left":"0"});
+			$(".toggle-menu").css({"height":"0.7em"});						
 			menuopen=0;
 		}
 	});
