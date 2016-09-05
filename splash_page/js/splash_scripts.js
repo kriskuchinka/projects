@@ -85,13 +85,35 @@ $(document).ready(function() {
 	});
 	
 	/* display toggle and FA effect to expand experience section */
-	$("#expand-kris-exp").click(function() {
-		$("#experience-text").slideToggle();
+	$("#expand-kris-boot").click(function() {
+		$("#boot-text").slideToggle();
 		if (exp_kris_arrow == 0) {
-			$(".experience-kris-arrow").css({"transform":"rotate(180deg)"});
+			$(".boot-kris-arrow").css({"transform":"rotate(180deg)"});
 			exp_kris_arrow = 1;		
 		} else {
-			$(".experience-kris-arrow").css({"transform":"rotate(0deg)"});
+			$(".boot-kris-arrow").css({"transform":"rotate(0deg)"});
+			exp_kris_arrow = 0;
+		}
+	});
+
+	$("#expand-kris-hack").click(function() {
+		$("#hack-text").slideToggle();
+		if (exp_kris_arrow == 0) {
+			$(".hack-kris-arrow").css({"transform":"rotate(180deg)"});
+			exp_kris_arrow = 1;		
+		} else {
+			$(".hack-kris-arrow").css({"transform":"rotate(0deg)"});
+			exp_kris_arrow = 0;
+		}
+	});		
+
+	$("#expand-kris-clark").click(function() {
+		$("#clark-text").slideToggle();
+		if (exp_kris_arrow == 0) {
+			$(".clark-kris-arrow").css({"transform":"rotate(180deg)"});
+			exp_kris_arrow = 1;		
+		} else {
+			$(".clark-kris-arrow").css({"transform":"rotate(0deg)"});
 			exp_kris_arrow = 0;
 		}
 	});
