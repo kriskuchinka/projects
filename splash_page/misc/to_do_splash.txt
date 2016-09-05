@@ -1,11 +1,9 @@
 To do for Splash Page:
 ---------------------------
 
---> Choose font
-
 --> Take new pictures for hero image
 
---> Figure out Hamburger Menu turning into x (refer to codepen fork)
+--> Fix arrow animations to be uniform
 
 --> Make site responsive for desktop, tablet and phone sizes
 

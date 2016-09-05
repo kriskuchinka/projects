@@ -237,9 +237,10 @@ h2 {
 	margin-top: 12px;
 }
 
-.text, .guild-skills, .clark-skills {
+.text/*, .guild-skills, .clark-skills*/ {
 	line-height: 2em;
-	padding: 10px;
+/*	padding: 10px;*/
+	margin-left: 2em;
 }
 
 .dual-sides {
@@ -285,7 +286,21 @@ h2 {
 
 ul.guild-skills, ul.clark-skills {
 	list-style-type: square;
-	margin-left: 30px;
+	margin-left: 4em;
+}
+
+textarea {
+	border: 3px solid #000000;
+	font-size: 1em;
+    margin-left: 2em;
+    padding:.6em;
+}
+
+.submit-button {
+	border: 3px solid #000000;	
+	margin-top: 18px;
+    margin-left: 2em;
+	font-size: 1em;
 }
 
 footer {
@@ -298,6 +313,7 @@ footer {
 	/*background-color: red;*/
 	width: 100%;
 	height: 24px;
+	padding-top: 50px;
 }
 /*
 footer p {
