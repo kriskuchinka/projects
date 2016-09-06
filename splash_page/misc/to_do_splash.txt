@@ -3,6 +3,8 @@ To do for Splash Page:
 
 --> Take new pictures for hero image
 
+--> Reword headings and double check/read through content
+
 --> Fix arrow animations to be uniform
 
 --> Make site responsive for desktop, tablet and phone sizes

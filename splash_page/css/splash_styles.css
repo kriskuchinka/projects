@@ -28,12 +28,23 @@ h2 {
 .menu {
 	width: 15%;
 	height: 100%;
-	background-color: green;
+	background-color: #E6E6E6;
+	border-left: #000000 3px solid;
 	position: fixed;
 	top: 0px;
 	right: -15%;
 	transition: all .3s;
 	z-index: 501;
+}
+
+.portfolio-heading {
+	font-size: 1.2em;
+	padding: 1em;
+	text-decoration: underline;
+}
+
+ul.menu-list {
+	padding: 1em;
 }
 
 /* begin hamburger menu styling */
@@ -76,8 +87,7 @@ h2 {
   	background: #000000;
 }
 
-.hamburger span::before,
-.hamburger span::after {
+.hamburger span::before, .hamburger span::after {
   	position: absolute;
   	display: block;
   	left: 0;
@@ -289,10 +299,10 @@ ul.guild-skills, ul.clark-skills {
 	margin-left: 4em;
 }
 
-textarea {
+.email-form {
 	border: 3px solid #000000;
 	font-size: 1em;
-    margin-left: 2em;
+    margin: 1em 0 0 2em;
     padding:.6em;
 }
 
@@ -301,6 +311,7 @@ textarea {
 	margin-top: 18px;
     margin-left: 2em;
 	font-size: 1em;
+	background-color: #E6E6E6;
 }
 
 footer {
