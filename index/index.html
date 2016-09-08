@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<title>Kris Kuchinka</title>
+	<!-- link to jQuery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- link to external JS file -->
+	<script src="js/splash_scripts.js"></script>
+	<!-- link to font awesome -->
+	<script src="https://use.fontawesome.com/10e53ddc35.js"></script>
+	<!-- link to external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/splash_styles.css">
+</header>
+
+<?php 
+	getInfo();
+?>
+
+<body>
+
+	<!-- need to house all content in site-wrap to make hamburger menu -->
+	<section class="site-wrap" id="site-wrap">
+
+
+
+		<section class="heading">
+			<!-- create hamburger menu icon -->
+			<button class="hamburger">
+		  		<span class="toggle-menu"></span>
+			</button>
+
+			<h1 class="welcome-heading">Welcome to <span class="site-url">Kris K. Codes!</span></h1>
+
+			<h2 class="welcome-heading-2">Please keep checking back and feel free to explore. Thank you for your interest.</h2>
+		</section>
+
+		
+		<section class="dual-sides">
+			<!-- display "hero image" of kris -->
+			<div class="side side-1">
+				<img class="hero-image" src="images/kris_landscape.jpg" alt="Kris Kuchinka">
+			</div> <!-- end of side-1 -->
+			<!-- main content and information, text, etc -->
+			<div class="side side-2">
+				<h1 class="section-heading" id="expand-meet-kris"><span class="meet-kris-arrow" aria-hidden="true">&#8595; </span>Meet Kris Kuchinka</h1>
+					<div class="text meet-text" id="meet-kris">
+						<p class="text">Born in southern California, Kris' family moved to Portland, Oregon when he was four years old. Kris lived in the Portland/Vancouver area for over two decades before settling down with his wife in Vancouver, Washington.</p>
+						<p class="text"> Currently, Kris is working on building his portfolio and enhancing his coding skills. He looks forward to helping local non-profits with web development and design needs.</p>
+					</div> <!-- end of meet-kris div -->
+				
+				<h1 class="section-heading" id="expand-kris-boot"><span class="boot-kris-arrow" aria-hidden="true">&#8595; </span>Kris at Boot Camp</h1>
+					<div class="text camp-text" id="boot-text">
+						<p class="text">Kris has been honing his Web Development and Design skills for almost 2 years. He has most recently graduated from a 12 week coding boot camp at PDX Code Guild. In this bootcamp, he learned and interacted with the following:</p>
+						<ul class="guild-skills">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Javascript/jQuery</li>
+							<li>Python</li>
+							<li>Django Framework</li>
+						</ul>
+					</div> <!-- end of boot-text div -->
+				<h1 class="section-heading" id="expand-kris-hack"><span class="hack-kris-arrow" aria-hidden="true">&#8595; </span>Kris' Hackathon Experience</h1>
+					<div class="text hackathon-text" id="hack-text">
+						<p class ="text">Recently, Kris participated in a weekend hackathon called PDX Startup Weekend. His team was the only team with a working web demo, due to his work and the work of 3 other developers. At the end of the weekend, their team took third place. The winners were selected by a panel of judges with various experience in all things related to business and web technology. This was Kris' first hackathon, but he hopes it will not be his last.</p>
+					</div> <!-- end of hack-text div -->
+				
+				<h1 class="section-heading" id="expand-kris-clark"><span class="clark-kris-arrow" aria-hidden="true">&#8595; </span>Kris at Clark College</h1>
+					<div class="text college-text" id="clark-text">
+						<p class="text">At Clark College, Kris took the following classes and successfully passed with a 3.5GPA:</p>
+						<ul class="text clark-skills">
+							<li>Intro to Programming</li>
+							<li>HTML Fundamentals</li>
+							<li>Photoshop</li>
+							<li>Social Media Exploration</li>
+							<li>2-D Design</li>
+							<li>Web Video Production</li>
+							<li>JavaScript</li>
+							<li>Web Design 1</li>
+							<li>Web Design 2</li>
+							<li>Wordpress 1</li>
+							<li>PHP with SQL 1</li>
+							<li>PHP with SQL 2</li>
+							<li>User Experience Design</li>
+							<li>Web Server Technology</li>
+							<li>API and Advanced Integration</li>	
+						</ul>
+					</div> <!-- end of clark-text div -->
+
+				<h1 class="section-heading contact-heading" id="expand-kris-contact"><span class="contact-kris-arrow" aria-hidden="true">&#8595; </span>Contact Kris</h1>
+
+					<div class="text" id="contact-text">
+						<h2>Phone: (503)705-8045</h2>
+						<h2>Email: kriskuchinka@gmail.com</h2>			
+					</div> <!-- end of text div -->
+				
+				<!-- <form action="php/contact-kris.php" method="post">
+					<textarea class="email-form" name="questions-comments" id="kris-mail" rows="14" cols="50" placeholder="Have a question? Email Kris!"></textarea>
+
+					<p><input class="email-form" type="text" name="name" placeholder="Your Name"></input></p>
+					
+					<p><input class="email-form" type="text" name="email" placeholder="Your Email Address"></input></p>
+
+					<p><button class="submit-button" type="submit">Send Email</button></p>
+				</form>  end of MAILTO form 	 -->				
+			</div> <!-- end of side-2 div -->
+			
+		</section> <!-- end of dual-sides sect -->
+
+
+
+	</section> <!-- end of section site-wrap -->
+
+	<!-- portfolio list -->
+	<section class="menu hidden-list" id="drawer-list">
+		<h2 class="portfolio-heading">Portfolio Pieces</h2>
+		<ul class="menu-list">
+			<li>Potluck Party</li>
+		</ul>
+		<h2 class="portfolio-heading">There will be more to come soon. Please check back.</h2>
+
+	</section>
+
+	<footer>
+		<p>&copy;2016 Kris Kuchinka</p>
+	</footer>
+	
+</body>
+</html>

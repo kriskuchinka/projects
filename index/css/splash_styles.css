@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: MontserratAlternates-ExtraLight;
+}
+
+@font-face {
+    font-family: MontserratAlternates-ExtraLight;
+    src: url(../font/MontserratAlternates-ExtraLight.otf);
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+/* set up hidden menu */
+.site-wrap {
+	width: 100%;
+	position: relative;
+	transition: all .3s;
+	padding: 5px;
+	height: 100%;
+	line-height: 1.3em;
+}
+
+.menu {
+	width: 15%;
+	height: 100%;
+	background-color: #E6E6E6;
+	border-left: #000000 3px solid;
+	position: fixed;
+	top: 0px;
+	right: -15%;
+	transition: all .3s;
+	z-index: 501;
+}
+
+.portfolio-heading {
+	font-size: 1.2em;
+    padding: .5em 1em;
+}
+
+ul.menu-list {
+	padding: 1em;
+}
+
+ul.menu-list li {
+	padding: 1em;
+	list-style-type: none;
+}
+/* begin hamburger menu styling */
+/* CSS to begin hamburger menu */
+.hamburger {
+    display: block;
+    position: fixed;
+    /*z-index: 999;*/
+   	/*box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, .2);*/
+    /*overflow: hidden;
+    float: right;*/
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 7em;
+    height: 7em;
+    /*top: 1em;*/
+/*   text-indent: -9999px; */
+  	appearance: none;
+  	box-shadow: none;
+  	border-radius: none;
+  	border: none;
+  	cursor: pointer;
+  	transition: 0.3s;
+}
+
+.hamburger:focus {
+  	outline: none;
+}
+
+/* Create Hamburger Lines */
+.hamburger span {
+  	display: block;
+  	position: absolute;
+  	top:  3em;
+  	left: 1em;
+  	right: 1em;
+  	height: .7em;
+  	background: #000000;
+}
+
+.hamburger span::before, .hamburger span::after {
+  	position: absolute;
+  	display: block;
+  	left: 0;
+  	width: 100%;
+  	height: .7em;
+  	background-color: #000000;
+  	content: "";
+  	z-index: 9999;  	  	
+}
+
+.hamburger span::before {
+  	top: -1.3em;
+}
+
+.hamburger span::after {
+  	bottom: -1.3em;
+}
+
+/* Animate Hamburger */
+
+/* for splash page, I need to figure out the appropriate background color to use against the gradient gray */
+.hamburger {
+  	background-color: #ffffff;
+}
+
+.hamburger span {
+  	transition: background 0s .3s;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  	transition-duration: 0.3s, 0.3s;
+  	transition-delay: 0.3s, 0s;
+}
+
+.hamburger span::before {
+  	transition-property: top, transform;
+}
+
+.hamburger span::after {
+  	transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.hamburger.is-active {
+ 	background-color: #ffffff;
+}
+
+.hamburger.is-active span {
+  	background: none;
+}
+
+.hamburger.is-active span::before {
+  	top: 1em;
+  	transform: rotate(45deg);
+}
+
+.hamburger.is-active span::after {
+  	bottom: 0;
+  	transform: rotate(-45deg);
+}
+
+.hamburger.is-active span::before,
+.hamburger.is-active span::after {
+  	transition-delay: 0s, 0.3s;
+}
+
+/* end hamburger menu styling */
+
+.heading {
+	top: 0;
+	left: 0;
+	z-index: 500;
+	line-height: 3em;
+	padding-top: 10px;
+    text-align: center;	
+    position: fixed;
+    width: 100%;
+   	background-color: white;
+   	/*box-shadow: 0 4px 2px 2px rgba(0, 0, 0, .3);*/
+   	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .25);
+   	transition: 0.3s;
+}
+
+
+.welcome-heading {
+	font-size: 4em;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.welcome-heading-2 {
+	margin-bottom: 10px;
+}
+/*.welcome-heading-2 {
+	text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 3em;
+}*/
+/*
+.menu-icon {
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	right: 0;
+	display: block;
+	margin-right: 20px;
+	width: 30px;
+	padding: 10px;
+}*/
+
+/*.bar {
+	width: 30px;
+	background-color: black;
+	display: block;
+	height: 3px;
+	margin: 4px 0;
+}*/
+/*
+#drawer-list {
+	display: none;
+	float: right;
+	background-color: gray;
+	width: 100px;
+}*/
+
+
+.site-url {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.side-1 {
+	position: fixed;
+}
+
+.side-2 {
+	float: right;
+	padding-top: 30px;
+}
+
+#kris-mail {
+	margin-top: 10px;
+}
+
+.section-heading {
+	text-align: left;
+	padding: 1em 1em 1em 1em;
+	font-weight: bold;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+/*.next-heading {
+	margin-top: 12px;
+}*/
+
+
+
+.text/*, .guild-skills, .clark-skills*/ {
+	line-height: 2em;
+/*	padding: 10px;*/
+	margin-left: 2em;
+}
+
+.dual-sides {
+	width: 100%;
+	margin-top: 120px;
+}
+
+.side {
+	vertical-align: top;
+}
+
+.side-1 {
+	display: inline-block;
+	width:40%;
+	margin: 4%;
+	padding: 2em;
+}
+
+.side-2 {
+	display: inline-block;
+	width: 50%;
+	margin: 4%;
+}
+
+.side-1 img {
+	border: 4px solid black;
+	text-align: center;
+	width: 80%;
+	box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, .2);
+}
+
+.meet-kris-arrow, .boot-kris-arrow, .hack-kris-arrow, .clark-kris-arrow, .contact-kris-arrow {
+	transition: all .5s;
+}
+/*
+.fa {
+	margin-right: 10px;
+}*/
+
+#meet-kris, #boot-text, #hack-text, #clark-text, #contact-text {
+	display: none;
+}
+
+ul.guild-skills, ul.clark-skills {
+	list-style-type: square;
+	margin-left: 4em;
+}
+
+.email-form {
+	border: 3px solid #000000;
+	font-size: 1em;
+	margin: 1em 0 0 4em;
+    padding:.6em;
+}
+
+.submit-button {
+	border: 3px solid #000000;	
+	margin-top: 18px;
+    margin-left: 4em;
+	font-size: 1em;
+	background-color: #E6E6E6;
+}
+
+footer {
+	clear: both;
+	background-color: white;
+	/*margin: 0;*/
+	/*z-index: 999;*/
+	text-align: center;
+	bottom: 0;
+	/*background-color: red;*/
+	width: 100%;
+	height: 24px;
+	padding-top: 50px;
+}
+/*
+footer p {
+	margin: 0;
+}*/
